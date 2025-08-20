@@ -1,0 +1,169 @@
+/* General */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1a1b26;
+  color: #c0caf5;
+  scroll-behavior: smooth;
+}
+header,
+section {
+  padding: 80px 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1b26 !important;
+}
+.navbar-brand,
+.nav-link {
+  color: #c0caf5 !important;
+}
+.nav-link:hover {
+  color: #bb9af7 !important;
+}
+.navbar-toggler {
+  border-color: #7aa2f7 !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%237aa2f7' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Welcome Section */
+#welcome-section {
+  background: linear-gradient(135deg, #0f111a, #1a1b26);
+  color: #c0caf5;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+#welcome-section h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #7aa2f7, #bb9af7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#welcome-section p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #7aa2f7;
+}
+
+/* Buttons */
+.btn-outline-glow {
+  color: #7aa2f7;
+  border: 2px solid #7aa2f7;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-outline-glow:hover {
+  color: #1a1b26;
+  background: linear-gradient(90deg, #7aa2f7, #bb9af7);
+  border-color: #bb9af7;
+}
+.btn-primary {
+  background-color: #7aa2f7;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #5e81ac;
+}
+.btn-outline-light {
+  color: #7aa2f7;
+  border-color: #7aa2f7;
+}
+.btn-outline-light:hover {
+  color: #c0caf5;
+  background-color: #7aa2f7;
+  border-color: #7aa2f7;
+}
+
+/* Sections */
+.section-title {
+  color: #7aa2f7;
+  margin-bottom: 2rem;
+}
+
+/* Projects */
+.project-card {
+  margin-bottom: 6rem; /* more vertical space between projects */
+  padding: 2rem 0; /* adds padding inside each project row */
+  border-bottom: 1px solid rgba(122, 162, 247, 0.2); /* optional separator line */
+}
+
+/* Project images */
+.project-card img {
+  width: 100%;
+  max-height: 400px; 
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(122, 162, 247, 0.4);
+  margin-bottom: 1.5rem; /* space below image before text */
+}
+
+
+/* Project text */
+.project-card h4 {
+  margin-bottom: 1rem; /* space below title */
+}
+
+.project-card p {
+  margin-bottom: 1rem; /* space below description */
+}
+
+
+/* Star bullets */
+.star-list li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+.star-list li::before {
+  content: "★ ";
+  color: #bb9af7;
+}
+
+/* Skills */
+.skill-item {
+  background: linear-gradient(90deg, #bb9af7, #7aa2f7);
+  color: #1a1b26;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1b26;
+  color: #c0caf5;
+}
+footer a {
+  color: #7aa2f7;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #bb9af7;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  #welcome-section h1 {
+    font-size: 2rem;
+  }
+  .btn-outline-glow {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .skill-item {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
